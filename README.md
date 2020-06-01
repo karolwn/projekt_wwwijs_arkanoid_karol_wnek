@@ -2,6 +2,16 @@
 
 ## Prosty klon gry Arkanoid napisany w języku python
 
+### wymagane modułu zewnętrzne:
+- pygame, projekt został storzony na wersji 1.9.6
+- math
+- random
+- time
+- piclke
+
+### uruchomienie
+Wystarczy uruchomić skrypt o nazwie main\_menu\_module.py
+
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
 - możliwość generowania losowego poziomu lub wczytanie go z pliku (1 pkt)
