@@ -33,6 +33,15 @@ dostępne klawisze to:
 - 'l': szybkie wczytanie
 - 'n': nowa gra
 - 'escape': powrót do menu głównego
+![load](./images/load.PNG)<br/>
+Menu wczytywania poziomu
+dostępne klawisze to:
+- 'escape': powrót do menu głównego
+![edit](./images/edit.PNG)<br/>
+Edytor poziomów
+dostępne klawisze
+- 'c': anulowanie wybranego bloku
+- 'escape': powrót do menu głównego
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
 - możliwość generowania losowego poziomu lub wczytanie go z pliku (1 pkt)
