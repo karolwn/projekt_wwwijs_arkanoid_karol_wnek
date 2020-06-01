@@ -32,6 +32,7 @@ dostępne klawisze to:
 - 's': szybki zapis
 - 'l': szybkie wczytanie
 - 'n': nowa gra
+- 'escape': powrót do menu głównego
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
 - możliwość generowania losowego poziomu lub wczytanie go z pliku (1 pkt)
