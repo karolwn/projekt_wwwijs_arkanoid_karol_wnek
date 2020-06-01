@@ -50,6 +50,12 @@ Edytor poziomów
 dostępne klawisze
 - 'c': anulowanie wybranego bloku
 - 'escape': powrót do menu głównego
+
+Po przejściu losowo wygeneorwanego poziomu, paleta kolorów bloków jest odwracana, poziom jest generowany ponownie, a graczowi doliczane są 3 życia.
+
+Po ukończeniu wczytanego poziomurozgrywka nie jest kontynuowana.
+
+Po utracie wszystkich żyć, generowany jest nowy poziom. W przypadku wczytywanych poziomów rozgrywka wraca do stanu początkowego - wczytany poziom
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
 - możliwość generowania losowego poziomu lub wczytanie go z pliku (1 pkt)
