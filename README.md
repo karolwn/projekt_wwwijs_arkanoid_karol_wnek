@@ -1,8 +1,8 @@
 # Projekt z przedmiotu WWWiJS
 
-# Prosty klon gry Arkanoid napisany w języku python
+## Prosty klon gry Arkanoid napisany w języku python
 
-## opis funkcjonalności:
+### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
 - możliwość generowania losowego poziomu lub wczytanie go z pliku (1 pkt)
 - odwzorowanie fizyki ruchu piłki (1 pkt)
