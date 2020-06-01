@@ -35,6 +35,7 @@ dostępne klawisze to:
 - 'escape': powrót do menu głównego
 
 Menu wczytywania poziomu
+
 ![load](./images/load.PNG)<br/>
 dostępne klawisze to:
 - 'escape': powrót do menu głównego
