@@ -10,7 +10,7 @@
 - piclke
 
 ### uruchomienie
-Wystarczy uruchomić skrypt o nazwie main\_menu\_module.py
+Wystarczy uruchomić skrypt o nazwie 'main\_menu\_module.py'
 
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
