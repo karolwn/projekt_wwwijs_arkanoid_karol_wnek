@@ -9,8 +9,12 @@
 - time
 - piclke
 
-### uruchomienie
-Wystarczy uruchomić skrypt o nazwie 'main\_menu\_module.py'
+### przygotowanie do uruchomienia:
+
+### uruchomienie:
+Aby włączyć grę w pełni funkcjonalną należy uruchomić bez żadnych dodatkowych atrybutów skrypt o nazwie 'main\_menu\_module.py'. Daje on dostęp do zaczęcia rozgrywki, wczytania poziomu, edytora oraz ekranu pomocy.
+
+Alternatywą jest uruchomienie pliku 'arkanoid\_module.py'. Zawiera on jedynie rozgrywkę. Bez menu, edytora i wczytywania.
 
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
