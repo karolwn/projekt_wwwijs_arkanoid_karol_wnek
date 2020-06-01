@@ -74,6 +74,8 @@ dostępne parametry:
 - ilość kolumn do losowego generowania poziomu
 - ilość rzędów do losowego generowania poziomu
 
+Stworzone poziomy przechowywane są w folderze 'levels'
+
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
 - możliwość generowania losowego poziomu lub wczytanie go z pliku (1 pkt)
