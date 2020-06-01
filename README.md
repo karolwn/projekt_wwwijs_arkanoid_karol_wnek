@@ -58,7 +58,13 @@ Po ukończeniu wczytanego poziomurozgrywka nie jest kontynuowana.
 Po utracie wszystkich żyć, generowany jest nowy poziom. W przypadku wczytywanych poziomów rozgrywka wraca do stanu początkowego - wczytany poziom.
 
 Co jakiś czas po zniszczeniu cegiełki zostanie upuszczona losowa znajdźka. W sumie jest ich 12 rodzajów, są to:
+
 ![pow](./images/power.PNG)<br/>
+
+Plik konfiguracyjny nazywa się 'game.cfg'
+
+![conf](./images/conf.PNG)<br/>
+
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
 - możliwość generowania losowego poziomu lub wczytanie go z pliku (1 pkt)
