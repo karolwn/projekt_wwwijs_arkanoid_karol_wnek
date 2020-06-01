@@ -23,16 +23,48 @@ Alternatywą jest uruchomienie pliku 'arkanoid\_module.py'. Zawiera on jedynie r
 
 ### krótkie omówienie:
 Po odpaleniu 'main\_memu\_module.py' powinien być widoczny poniższy interfejs
+
 ![main interface](./images/menu.PNG)<br/>
 Wybranie opcji 'Play' uruchamia rozgrywkę na losowo wygenerowanym poziomie
+
 ![gameplay](./images/play.PNG)<br/>
 dostępne klawisze to:
 - 'spacja': rozpoczęcie rozgrywki/wznowienie
+- 'lewa strzałka': ruch gracza w lewo
+- 'prawa strzałka': ruch gracza w prawo
 - 'p': pauza
 - 's': szybki zapis
 - 'l': szybkie wczytanie
 - 'n': nowa gra
 - 'escape': powrót do menu głównego
+
+Menu wczytywania poziomu
+
+![load](./images/load.PNG)<br/>
+dostępne klawisze to:
+- 'escape': powrót do menu głównego
+
+Edytor poziomów
+
+![edit](./images/edit.PNG)<br/>
+dostępne klawisze
+- 'c': anulowanie wybranego bloku
+- 'escape': powrót do menu głównego
+
+Po przejściu losowo wygeneorwanego poziomu, paleta kolorów bloków jest odwracana, poziom jest generowany ponownie, a graczowi doliczane są 3 życia.
+
+Po ukończeniu wczytanego poziomurozgrywka nie jest kontynuowana.
+
+Po utracie wszystkich żyć, generowany jest nowy poziom. W przypadku wczytywanych poziomów rozgrywka wraca do stanu początkowego - wczytany poziom.
+
+Co jakiś czas po zniszczeniu cegiełki zostanie upuszczona losowa znajdźka. W sumie jest ich 12 rodzajów, są to:
+
+![pow](./images/power.PNG)<br/>
+
+Plik konfiguracyjny nazywa się 'game.cfg'
+
+![conf](./images/conf.PNG)<br/>
+
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
 - możliwość generowania losowego poziomu lub wczytanie go z pliku (1 pkt)
