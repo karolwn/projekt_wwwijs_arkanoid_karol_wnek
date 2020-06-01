@@ -1,2 +1,4 @@
-## projekt_wwwijs_arkanoid_karol_wnek
-arkanoid
+# Projekt z przedmiotu WWWiJS
+
+## Prosty klon gry Arkanoid napisany w języku python
+
