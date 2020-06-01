@@ -451,7 +451,6 @@ def arkanoid_main(surface = None, game_size = None, level = None):
                 player.lives += 3
             else:
                 balls = reset_balls(player, balls, size[1], ball_speed, ball_power)
-                loop_flag = False
 
         redraw_window(window, blocks, player, balls, font, size, powerups, notification_saving, notification_load_error)
 
