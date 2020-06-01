@@ -23,7 +23,7 @@ Alternatywą jest uruchomienie pliku 'arkanoid\_module.py'. Zawiera on jedynie r
 
 ### krótkie omówienie:
 Po odpaleniu 'main\_memu\_module.py' powinien być widoczny poniższy interfejs
-![main interface](images/menu.png)
+![main interface](./images/menu.PNG)
 
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
