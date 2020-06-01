@@ -22,8 +22,17 @@ Aby włączyć grę w pełni funkcjonalną należy uruchomić bez żadnych dodat
 Alternatywą jest uruchomienie pliku 'arkanoid\_module.py'. Zawiera on jedynie rozgrywkę. Bez menu, edytora i wczytywania.
 
 ### krótkie omówienie:
-
-
+Po odpaleniu 'main\_memu\_module.py' powinien być widoczny poniższy interfejs
+![main interface](./images/menu.PNG)<br/>
+Wybranie opcji 'Play' uruchamia rozgrywkę na losowo wygenerowanym poziomie
+![gameplay](./images/play.PNG)<br/>
+dostępne klawisze to:
+- 'spacja': rozpoczęcie rozgrywki/wznowienie
+- 'p': pauza
+- 's': szybki zapis
+- 'l': szybkie wczytanie
+- 'n': nowa gra
+- 'escape': powrót do menu głównego
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
 - możliwość generowania losowego poziomu lub wczytanie go z pliku (1 pkt)
