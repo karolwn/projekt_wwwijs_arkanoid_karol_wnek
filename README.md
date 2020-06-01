@@ -23,9 +23,9 @@ Alternatywą jest uruchomienie pliku 'arkanoid\_module.py'. Zawiera on jedynie r
 
 ### krótkie omówienie:
 Po odpaleniu 'main\_memu\_module.py' powinien być widoczny poniższy interfejs
-![main interface](./images/menu.PNG)
+![main interface](./images/menu.PNG)<br/>
 wybranie opcji 'Play' uruchamia rozgrywkę na losowo wygenerowanym poziomie
-![gameplay](./images/play.PNG)
+![gameplay](./images/play.PNG)<br/>
 
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
