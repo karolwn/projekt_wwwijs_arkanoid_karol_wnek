@@ -64,6 +64,15 @@ Co jakiś czas po zniszczeniu cegiełki zostanie upuszczona losowa znajdźka. W 
 Plik konfiguracyjny nazywa się 'game.cfg'
 
 ![conf](./images/conf.PNG)<br/>
+dostępne parametry:
+- szerokość okna w pikselach
+- wyskość okna w pikselach
+- rozmiar (długość) gracza w blokach 16 x 16 pikseli
+- prędkość piłki wyrażona w procentach, limit 200%
+- obrażenia zadawane przez piłkę
+- ilość punktów przyznawana graczowi za trafienie w blok
+- ilość kolumn do losowego generowania poziomu
+- ilość rzędów do losowego generowania poziomu
 
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
