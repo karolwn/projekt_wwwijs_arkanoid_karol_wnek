@@ -23,8 +23,10 @@ Alternatywą jest uruchomienie pliku 'arkanoid\_module.py'. Zawiera on jedynie r
 
 ### krótkie omówienie:
 Po odpaleniu 'main\_memu\_module.py' powinien być widoczny poniższy interfejs
+
 ![main interface](./images/menu.PNG)<br/>
 Wybranie opcji 'Play' uruchamia rozgrywkę na losowo wygenerowanym poziomie
+
 ![gameplay](./images/play.PNG)<br/>
 dostępne klawisze to:
 - 'spacja': rozpoczęcie rozgrywki/wznowienie
@@ -41,6 +43,7 @@ dostępne klawisze to:
 - 'escape': powrót do menu głównego
 
 Edytor poziomów
+
 ![edit](./images/edit.PNG)<br/>
 dostępne klawisze
 - 'c': anulowanie wybranego bloku
