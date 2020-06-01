@@ -33,12 +33,14 @@ dostępne klawisze to:
 - 'l': szybkie wczytanie
 - 'n': nowa gra
 - 'escape': powrót do menu głównego
-![load](./images/load.PNG)<br/>
+
 Menu wczytywania poziomu
+![load](./images/load.PNG)<br/>
 dostępne klawisze to:
 - 'escape': powrót do menu głównego
-![edit](./images/edit.PNG)<br/>
+
 Edytor poziomów
+![edit](./images/edit.PNG)<br/>
 dostępne klawisze
 - 'c': anulowanie wybranego bloku
 - 'escape': powrót do menu głównego
