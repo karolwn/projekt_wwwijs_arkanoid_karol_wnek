@@ -30,6 +30,8 @@ Wybranie opcji 'Play' uruchamia rozgrywkę na losowo wygenerowanym poziomie
 ![gameplay](./images/play.PNG)<br/>
 dostępne klawisze to:
 - 'spacja': rozpoczęcie rozgrywki/wznowienie
+- 'lewa strzałka': ruch gracza w lewo
+- 'prawa strzałka': ruch gracza w prawo
 - 'p': pauza
 - 's': szybki zapis
 - 'l': szybkie wczytanie
