@@ -2,6 +2,9 @@
 
 ## Prosty klon gry Arkanoid napisany w języku python
 
+### dokumentacja:
+Znajduje się ona pod następującym adresem: https://s29.labwww.pl/arkanoid/index.html
+
 ### wymagane modułu zewnętrzne:
 - pygame, projekt został storzony na wersji 1.9.6
 - math
@@ -10,11 +13,16 @@
 - piclke
 
 ### przygotowanie do uruchomienia:
+- sklonować repozytorium
+- przejść do folderu 'arkanoid'
 
 ### uruchomienie:
 Aby włączyć grę w pełni funkcjonalną należy uruchomić bez żadnych dodatkowych atrybutów skrypt o nazwie 'main\_menu\_module.py'. Daje on dostęp do zaczęcia rozgrywki, wczytania poziomu, edytora oraz ekranu pomocy.
 
 Alternatywą jest uruchomienie pliku 'arkanoid\_module.py'. Zawiera on jedynie rozgrywkę. Bez menu, edytora i wczytywania.
+
+### krótkie omówienie:
+
 
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
