@@ -374,6 +374,14 @@ def arkanoid_main(surface = None, game_size = None, level = None):
             if event.type == pygame.QUIT:
                 loop_flag = False
         
+        # new game
+        if keys[pygame.K_n]:
+            balls = reset_balls(player, balls, size[1], ball_speed, ball_power)
+            player.points = 0
+            player.lives = 3
+            blocks = generate_level(number_of_rows, number_of_collumns, colors)
+            sleep(0.2)
+
         # pause powerups
         if keys[pygame.K_p]:
             for powerup in powerups:
