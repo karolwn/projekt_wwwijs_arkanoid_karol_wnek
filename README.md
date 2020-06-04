@@ -5,7 +5,7 @@
 ### dokumentacja:
 Znajduje się ona pod następującym adresem: https://s29.labwww.pl/arkanoid/index.html
 
-### wymagane modułu zewnętrzne:
+### wymagane moduły:
 - pygame, projekt został storzony na wersji 1.9.6
 - math
 - random
@@ -17,7 +17,7 @@ Znajduje się ona pod następującym adresem: https://s29.labwww.pl/arkanoid/ind
 - przejść do folderu 'arkanoid'
 
 ### uruchomienie:
-Aby włączyć grę w pełni funkcjonalną należy uruchomić bez żadnych dodatkowych atrybutów skrypt o nazwie 'main\_menu\_module.py'. Daje on dostęp do zaczęcia rozgrywki, wczytania poziomu, edytora oraz ekranu pomocy.
+Aby włączyć grę w pełni funkcjonalną, należy uruchomić bez żadnych dodatkowych atrybutów skrypt o nazwie 'main\_menu\_module.py'. Daje on dostęp do zaczęcia rozgrywki, wczytania poziomu, edytora oraz ekranu pomocy.
 
 Alternatywą jest uruchomienie pliku 'arkanoid\_module.py'. Zawiera on jedynie rozgrywkę. Bez menu, edytora i wczytywania.
 
@@ -42,7 +42,8 @@ Menu wczytywania poziomu
 
 ![load](./images/load.PNG)<br/>
 dostępne klawisze to:
-- 'escape': powrót do menu głównego
+- 'escape': powrót do menu głównego oraz zakończenie wpisywania
+- 'enter': zakończenie wpisywania
 
 Edytor poziomów
 
@@ -51,9 +52,11 @@ dostępne klawisze
 - 'c': anulowanie wybranego bloku
 - 'escape': powrót do menu głównego
 
+Stworzone poziomy przechowywane są w folderze 'levels'
+
 Po przejściu losowo wygeneorwanego poziomu, paleta kolorów bloków jest odwracana, poziom jest generowany ponownie, a graczowi doliczane są 3 życia.
 
-Po ukończeniu wczytanego poziomurozgrywka nie jest kontynuowana.
+Po ukończeniu wczytanego poziomu rozgrywka nie jest kontynuowana.
 
 Po utracie wszystkich żyć, generowany jest nowy poziom. W przypadku wczytywanych poziomów rozgrywka wraca do stanu początkowego - wczytany poziom.
 
@@ -73,8 +76,6 @@ dostępne parametry:
 - ilość punktów przyznawana graczowi za trafienie w blok
 - ilość kolumn do losowego generowania poziomu
 - ilość rzędów do losowego generowania poziomu
-
-Stworzone poziomy przechowywane są w folderze 'levels'
 
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
