@@ -54,7 +54,7 @@ dostępne klawisze
 
 Po przejściu losowo wygeneorwanego poziomu, paleta kolorów bloków jest odwracana, poziom jest generowany ponownie, a graczowi doliczane są 3 życia.
 
-Po ukończeniu wczytanego poziomurozgrywka nie jest kontynuowana.
+Po ukończeniu wczytanego poziomu rozgrywka nie jest kontynuowana.
 
 Po utracie wszystkich żyć, generowany jest nowy poziom. W przypadku wczytywanych poziomów rozgrywka wraca do stanu początkowego - wczytany poziom.
 
