@@ -42,7 +42,8 @@ Menu wczytywania poziomu
 
 ![load](./images/load.PNG)<br/>
 dostępne klawisze to:
-- 'escape': powrót do menu głównego
+- 'escape': powrót do menu głównego oraz zakończenie wpisywania
+- 'enter': zakończenie wpisywania
 
 Edytor poziomów
 
