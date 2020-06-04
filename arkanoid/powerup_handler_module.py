@@ -126,10 +126,13 @@ def powerup_handler(powerups, blocks, balls, player, hitmarker, pow, dt, size, b
 
                 else:                         # random explosion
                     pow.play()
-                    for i in range(0, random.randint(1, 5)):
-                        block = blocks.pop(random.randint(1,len(blocks)) - 1)
-                        player.points += block.point_prize * 100
-                        hitmarker.play()
+                    try:
+                        for i in range(0, random.randint(1, 5)):
+                            block = blocks.pop(random.randint(1,len(blocks)) - 1)
+                            player.points += block.point_prize * 100
+                            hitmarker.play()
+                    except:
+                        pass
                     powerups.remove(powerup)
 
     return powerups, balls, blocks

@@ -223,7 +223,7 @@ def reset_balls(player, balls, size_y, ball_speed, ball_power):
     balls.clear();
     balls.append(BallClass(player, size_y, ball_speed, ball_power))
     player.invert = 1
-    player.speed_mod = 1.0
+
     return balls
 
 def quick_save(player, balls, blocks, powerups, colors):
@@ -406,6 +406,7 @@ def arkanoid_main(surface = None, game_size = None, level = None):
                     blocks = loaded[2]
                     powerups = loaded[3]
                     colors = loaded[4]
+                    ball_speed = balls[0].vel
                 else:
                     notification_load_error = True
                     load_error_timer = int(dt * 20)
@@ -445,18 +446,27 @@ def arkanoid_main(surface = None, game_size = None, level = None):
         # finished level
         if len(blocks) == 0:
             if not use_loaded_level:
+
+                if ball_speed < 1600:
+                    ball_speed *= 1.1 
+                if player.speed_mod < 1.5:
+                    player.speed_mod *= 1.1
+
+                points_for_hit += 5
+
+                inverted_color_a = (255 - colors[0][0], 255 - colors[0][1], 255 - colors[0][2])
+                inverted_color_b = (255 - colors[1][0], 255 - colors[1][1], 255 - colors[1][2])
+                inverted_color_c = (255 - colors[2][0], 255 - colors[2][1], 255 - colors[2][2])
+                inverted_color_d = (255 - colors[3][0], 255 - colors[3][1], 255 - colors[3][2])
+
                 colors.clear()
-                ball_speed *= 1.1 if ball_speed < 1600 else 1
-                player.speed_mod += 0.1 if player.speed_mod < 2 else 0
-                points_for_hit *= 5
-                color_dark_blue = (255 - color_dark_blue[0], 255 - color_dark_blue[1], 255 - color_dark_blue[2])
-                color_blue = (255 - color_blue[0], 255 - color_blue[1], 255 - color_blue[2])
-                color_green = (255 - color_green[0], 255 - color_green[1], 255 - color_green[2])
-                color_dark_green = (255 - color_dark_green[0], 255 - color_dark_green[1], 255 - color_dark_green[2])
-                colors = [color_dark_blue, color_blue, color_green, color_dark_green]
+                colors = [inverted_color_a, inverted_color_b, inverted_color_c, inverted_color_d]
+
                 blocks = generate_level(number_of_rows, number_of_collumns, colors)
                 balls = reset_balls(player, balls, size[1], ball_speed, ball_power)
+
                 player.lives += 3
+
             else:
                 balls = reset_balls(player, balls, size[1], ball_speed, ball_power)
 
