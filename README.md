@@ -52,6 +52,8 @@ dostępne klawisze
 - 'c': anulowanie wybranego bloku
 - 'escape': powrót do menu głównego
 
+Stworzone poziomy przechowywane są w folderze 'levels'
+
 Po przejściu losowo wygeneorwanego poziomu, paleta kolorów bloków jest odwracana, poziom jest generowany ponownie, a graczowi doliczane są 3 życia.
 
 Po ukończeniu wczytanego poziomu rozgrywka nie jest kontynuowana.
@@ -74,8 +76,6 @@ dostępne parametry:
 - ilość punktów przyznawana graczowi za trafienie w blok
 - ilość kolumn do losowego generowania poziomu
 - ilość rzędów do losowego generowania poziomu
-
-Stworzone poziomy przechowywane są w folderze 'levels'
 
 ### opis funkcjonalności:
 - konfiguracja za pomocą pliku tekstowego (1 pkt)
