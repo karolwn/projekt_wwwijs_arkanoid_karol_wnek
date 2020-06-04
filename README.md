@@ -5,7 +5,7 @@
 ### dokumentacja:
 Znajduje się ona pod następującym adresem: https://s29.labwww.pl/arkanoid/index.html
 
-### wymagane modułu zewnętrzne:
+### wymagane moduły:
 - pygame, projekt został storzony na wersji 1.9.6
 - math
 - random
