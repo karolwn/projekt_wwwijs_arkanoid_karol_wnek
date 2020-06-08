@@ -10,7 +10,7 @@ Znajduje się ona pod następującym adresem: https://s29.labwww.pl/arkanoid/ind
 - math
 - random
 - time
-- piclke
+- pickle
 
 ### przygotowanie do uruchomienia:
 - sklonować repozytorium
