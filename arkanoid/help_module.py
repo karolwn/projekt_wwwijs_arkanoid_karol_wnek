@@ -84,12 +84,12 @@ def blit_text(text, color, font, surface, position_start):
             word_surface = font.render(word, 0, color)
             word_width, word_height = word_surface.get_size()
             if x + word_width >= max_width:
-                x = position_start[0]        # Reset the x.
-                y += word_height  # Start on new row.
+                x = position_start[0] # Reset the x.
+                y += word_height      # Start on new row.
             surface.blit(word_surface, (x, y))
             x += word_width + space
-        x = position_start[0]     # Reset the x.
-        y += word_height          # Start on new row.
+        x = position_start[0]         # Reset the x.
+        y += word_height              # Start on new row.
 
     return y
 
@@ -109,7 +109,7 @@ def help_main(window, size):
     clock = pygame.time.Clock() # object that controlls time
     font = pygame.font.SysFont('Comic Sans MS', int(0.025*size[1]))
 
-    text = "Simple Arkanoid Clone created as a project for the\nWWW and Script Languages classes at AGH University of Science and Technology\nKarol Wnęk ICT studies, second year, may 2020\n\nCONTROLS\n--------------------\nmovement: left and right arrow\nlaunch ball: spacebar\nresume: spacebar\nquicksave: s\nquickload: l\npause: p\nback to the previous screen: escape\ncancel block placing: c\nTo load a level enter its name, press 'enter' and then click on the 'Load' button.\nTo save a level enter its name, press 'enter' and then click on the 'Save' button.\n\nPOWERUPS\n--------------------"
+    text = "Simple Arkanoid Clone created as a project for the\nWWW and Script Languages classes at AGH University of Science and Technology\nKarol Wnęk ICT studies, second year, may 2020\n\nCONTROLS\n--------------------\nmovement: left and right arrow\nlaunch ball: spacebar\nresume: spacebar\nquicksave: s\nquickload: l\npause: p\nback to the previous screen: escape\ncancel block placing: c\nTo load a level: click on the second box, enter its name, press 'enter', click on the 'Load' button.\nTo save a level: click on the second box, enter its name, press 'enter', click on the 'Save' button.\n\nPOWERUPS\n--------------------"
 
     powerups = ["ball damage x2", "double ball", "triple ball", "APFSDS", "larger player", "smaller player", "faster ball", "slower ball", "extra life", "-1 life", "inverted controls", "random explosion"]
 
