@@ -63,6 +63,7 @@ dostępne klawisze
 - 'escape': powrót do menu głównego
 
 Stworzone poziomy przechowywane są w folderze 'levels'
+
 Zapisywanie poziomu odbywa się analogicznie do wczytywania
 
 Po przejściu losowo wygeneorwanego poziomu, paleta kolorów bloków jest odwracana, poziom jest generowany ponownie, a graczowi doliczane są 3 życia.
