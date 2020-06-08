@@ -84,7 +84,7 @@ def blit_text(text, color, font, surface, position_start):
             word_surface = font.render(word, 0, color)
             word_width, word_height = word_surface.get_size()
             if x + word_width >= max_width:
-                x = pos[0]        # Reset the x.
+                x = position_start[0]        # Reset the x.
                 y += word_height  # Start on new row.
             surface.blit(word_surface, (x, y))
             x += word_width + space
