@@ -49,6 +49,12 @@ dostępne klawisze to:
 - 'escape': powrót do menu głównego oraz zakończenie wpisywania
 - 'enter': zakończenie wpisywania
 
+Aby wczytać poziom należy:
+-	lewym przyciskiem myszy kliknąć na pole pomiędzy „Enter the name of the desired level below”, a „Load”
+-	po zakończeniu wpisywania nacisnąć ‘enter’
+-	kliknąć lewym przyciskiem myszy w ‘Load’
+
+
 Edytor poziomów
 
 ![edit](./images/edit.PNG)<br/>
