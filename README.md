@@ -12,12 +12,16 @@ Znajduje się ona pod następującym adresem: https://s29.labwww.pl/arkanoid/ind
 - time
 - pickle
 
-### przygotowanie do uruchomienia:
+### przygotowanie do uruchomienia - GIT:
 - sklonować repozytorium
 - przejść do folderu 'arkanoid'
 
+### przygotowanie do uruchomienia - archiwum:
+- wypakować folder 'arkanoid'
+- przejść do folderu 'arkanoid'
+
 ### uruchomienie:
-Aby włączyć grę w pełni funkcjonalną, należy uruchomić bez żadnych dodatkowych atrybutów skrypt o nazwie 'main\_menu\_module.py'. Daje on dostęp do zaczęcia rozgrywki, wczytania poziomu, edytora oraz ekranu pomocy.
+Aby włączyć grę w pełni funkcjonalną, należy uruchomić bez żadnych dodatkowych atrybutów skrypt o nazwie 'main\_menu\_module.py'. Daje on dostęp do rozpoczęcia rozgrywki, wczytania poziomu, edytora oraz ekranu pomocy.
 
 Alternatywą jest uruchomienie pliku 'arkanoid\_module.py'. Zawiera on jedynie rozgrywkę. Bez menu, edytora i wczytywania.
 
