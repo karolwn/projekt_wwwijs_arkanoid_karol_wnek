@@ -17,7 +17,7 @@ Znajduje się ona pod następującym adresem: https://s29.labwww.pl/arkanoid/ind
 - przejść do folderu 'arkanoid'
 
 ### przygotowanie do uruchomienia - archiwum:
-- wypakować folder 'arkanoid'
+- wypakować archium
 - przejść do folderu 'arkanoid'
 
 ### uruchomienie:
