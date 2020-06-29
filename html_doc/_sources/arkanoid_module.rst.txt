@@ -1,0 +1,7 @@
+arkanoid\_module module
+=======================
+
+.. automodule:: arkanoid_module
+   :members:
+   :undoc-members:
+   :show-inheritance:

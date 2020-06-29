@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>help_module module &#8212; Arkanoid  documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-help_module">
+<span id="help-module-module"></span><h1>help_module module<a class="headerlink" href="#module-help_module" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="help_module.blit_text">
+<code class="sig-prename descclassname">help_module.</code><code class="sig-name descname">blit_text</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">color</span></em>, <em class="sig-param"><span class="n">font</span></em>, <em class="sig-param"><span class="n">surface</span></em>, <em class="sig-param"><span class="n">position_start</span></em><span class="sig-paren">)</span><a class="headerlink" href="#help_module.blit_text" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>This function crops text to fit it in window. It adds ‘</p>
+</div></blockquote>
+<p>‘ when len(line) + len(word) &gt; window width. And renders it afterwards</p>
+<blockquote>
+<div><p>…</p>
+<dl class="simple">
+<dt>text<span class="classifier">str</span></dt><dd><p>text to be rendered after adding ‘</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl>
+<dt>‘</dt><dd><dl class="simple">
+<dt>color<span class="classifier">(int, int, int)</span></dt><dd><p>text color, RGB value</p>
+</dd>
+<dt>font<span class="classifier">pygame.font</span></dt><dd><p>text font</p>
+</dd>
+<dt>surface<span class="classifier">pygame.surface</span></dt><dd><p>canvas to draw on</p>
+</dd>
+<dt>position_start<span class="classifier">int</span></dt><dd><p>where the text should start</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>y<span class="classifier">int</span></dt><dd><p>y position of the last line</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="help_module.help_main">
+<code class="sig-prename descclassname">help_module.</code><code class="sig-name descname">help_main</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">window</span></em>, <em class="sig-param"><span class="n">size</span></em><span class="sig-paren">)</span><a class="headerlink" href="#help_module.help_main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main function that keeps everything running</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>surface</strong> (<em>pygame.display.set_mode()</em>) – existing screen</p></li>
+<li><p><strong>game_size</strong> (<em>(width, height)</em>) – game size</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="help_module.redraw_window">
+<code class="sig-prename descclassname">help_module.</code><code class="sig-name descname">redraw_window</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">surface</span></em>, <em class="sig-param"><span class="n">font</span></em>, <em class="sig-param"><span class="n">size</span></em>, <em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">colors</span></em>, <em class="sig-param"><span class="n">powerups</span></em><span class="sig-paren">)</span><a class="headerlink" href="#help_module.redraw_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Core function, it is resposnible for drawing the whole game screen</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>surface</strong> (<em>pygame.surface</em>) – canvas to draw on</p></li>
+<li><p><strong>font</strong> (<em>pygame.font</em>) – font used to display score and lives</p></li>
+<li><p><strong>size</strong> (<em>(int, int)</em>) – game window size (widht, height)</p></li>
+<li><p><strong>colors</strong> (<em>[(int, int, int)]</em>) – list containing tuples that contain RGB values</p></li>
+<li><p><strong>UI</strong> (<em>[pygame.Rect]</em>) – list containing UI elements</p></li>
+<li><p><strong>text</strong> (<em>str</em>) – text to display</p></li>
+<li><p><strong>colors</strong> (<em>[(int, int, int)]</em>) – list containing tuples that contain RGB values</p></li>
+<li><p><strong>powerups</strong> (<em>[str]</em>) – list that contains powerups descriptions</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/help_module.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Karol Wnęk.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

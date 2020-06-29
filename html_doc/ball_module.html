@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ball_module module &#8212; Arkanoid  documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-ball_module">
+<span id="ball-module-module"></span><h1>ball_module module<a class="headerlink" href="#module-ball_module" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="ball_module.BallClass">
+<em class="property">class </em><code class="sig-prename descclassname">ball_module.</code><code class="sig-name descname">BallClass</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em>, <em class="sig-param"><span class="n">game_size_y</span></em>, <em class="sig-param"><span class="n">speed</span></em>, <em class="sig-param"><span class="n">power</span></em>, <em class="sig-param"><span class="n">speed_x</span><span class="o">=</span><span class="default_value">0.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ball_module.BallClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class to represent a ball</p>
+<p>…</p>
+<dl class="simple">
+<dt>radius<span class="classifier">int</span></dt><dd><p>ball’s radius</p>
+</dd>
+<dt>color<span class="classifier">(int, int, int)</span></dt><dd><p>RGB value representing ball’s color</p>
+</dd>
+<dt>pos_x<span class="classifier">float</span></dt><dd><p>x coordinate of ball’s center</p>
+</dd>
+<dt>pos_y<span class="classifier">float</span></dt><dd><p>y coordinate of ball’s center</p>
+</dd>
+<dt>in_move<span class="classifier">boolean</span></dt><dd><p>defines whether ball is moving or not</p>
+</dd>
+<dt>vel_x<span class="classifier">float</span></dt><dd><p>x axis velocity</p>
+</dd>
+<dt>vel_y<span class="classifier">float</span></dt><dd><p>y axis velocity</p>
+</dd>
+<dt>vel<span class="classifier">float</span></dt><dd><p>total velocity</p>
+</dd>
+<dt>power<span class="classifier">int</span></dt><dd><p>tells how much damage the ball is dealing</p>
+</dd>
+<dt>new_ball<span class="classifier">boolean</span></dt><dd><p>new ball flag, switched to False after launching the new ball</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="ball_module.BallClass.draw">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">surface</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ball_module.BallClass.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws ball on a given surface.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ball_module.BallClass.movement">
+<code class="sig-name descname">movement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">keys</span></em>, <em class="sig-param"><span class="n">game_size</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ball_module.BallClass.movement" title="Permalink to this definition">¶</a></dt>
+<dd><p>defines ball’s movement</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ball_module.BallClass.pos_update">
+<code class="sig-name descname">pos_update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">player</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ball_module.BallClass.pos_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>resets ball position to the starting one, (middle of the player)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ball_module.BallClass.player_hit">
+<code class="sig-name descname">player_hit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">hitbox_player</span></em>, <em class="sig-param"><span class="n">game_size_y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ball_module.BallClass.player_hit" title="Permalink to this definition">¶</a></dt>
+<dd><p>collision detection ball-player</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ball_module.BallClass.block_hit">
+<code class="sig-name descname">block_hit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">hitbox_block</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ball_module.BallClass.block_hit" title="Permalink to this definition">¶</a></dt>
+<dd><p>collision detection ball-block</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ball_module.BallClass.corner_hit">
+<code class="sig-name descname">corner_hit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">corner_x</span></em>, <em class="sig-param"><span class="n">corner_y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ball_module.BallClass.corner_hit" title="Permalink to this definition">¶</a></dt>
+<dd><p>changes speed of ball after coliding with block’s corner</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="ball_module.BallClass.update_speed">
+<code class="sig-name descname">update_speed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">speed_multi</span></em><span class="sig-paren">)</span><a class="headerlink" href="#ball_module.BallClass.update_speed" title="Permalink to this definition">¶</a></dt>
+<dd><p>updates ball’ s speed using provided multiplier</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id0">
+<code class="sig-name descname">block_hit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">box</span></em>, <em class="sig-param"><span class="n">dt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collision detection ball-block and reacting to it - velocity change.</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hitbox</strong> (<em>(int, int, int, int)</em>) – tuple containing hitbox of block (left upper corner x, left upper corner y, width, height)</p></li>
+<li><p><strong>dt</strong> (<em>int</em>) – time in ms that took to process previous frame</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>True if hit else False</strong></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ball_module.BallClass.color">
+<code class="sig-name descname">color</code><em class="property"> = (200, 200, 200)</em><a class="headerlink" href="#ball_module.BallClass.color" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="id1">
+<code class="sig-name descname">corner_hit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">corner_x</span></em>, <em class="sig-param"><span class="n">corner_y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes speed of ball after coliding with block’s corner</p>
+<p>‘’’</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>corner_x</strong> (<em>int</em>) – x coordinate of the corner</p></li>
+<li><p><strong>corner_y</strong> (<em>int</em>) – y coordinate of the corner</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id2">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">surface</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws ball on a given surface.</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>surface</strong> (<em>pygame.surface</em>) – canvas to draw on</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ball_module.BallClass.in_move">
+<code class="sig-name descname">in_move</code><em class="property"> = False</em><a class="headerlink" href="#ball_module.BallClass.in_move" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="id3">
+<code class="sig-name descname">movement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">keys</span></em>, <em class="sig-param"><span class="n">game_size</span></em>, <em class="sig-param"><span class="n">bounce</span></em>, <em class="sig-param"><span class="n">dt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines ball’s movement and bouncing off the walls.</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keys</strong> (<em>pygame.keys.get_pressed()</em>) – keys on the keyboard that were pressed by the player</p></li>
+<li><p><strong>game_size</strong> (<em>(int, int)</em>) – tuple conatining game window size in pixels (e.g. 800 x 600)</p></li>
+<li><p><strong>bounce</strong> (<em>pygame.mixer.Sound</em>) – sound effect to play when ball bounces off the walls</p></li>
+<li><p><strong>dt</strong> (<em>int</em>) – time in ms that took to process previous frame</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ball_module.BallClass.new_ball">
+<code class="sig-name descname">new_ball</code><em class="property"> = True</em><a class="headerlink" href="#ball_module.BallClass.new_ball" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="id4">
+<code class="sig-name descname">player_hit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hitbox</span></em>, <em class="sig-param"><span class="n">game_size_y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collision detection ball-player.</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hitbox</strong> (<em>(int, int, int, int)</em>) – tuple containing player’s hitbox</p></li>
+<li><p><strong>game_size_y</strong> (<em>int</em>) – height of the game window</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>True if hit else False</strong></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id5">
+<code class="sig-name descname">pos_update</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id5" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets ball position to the starting one, (middle of the player).</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>player</strong> (<em>PlayerClass</em>) – used to determinate requred position</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="ball_module.BallClass.radius">
+<code class="sig-name descname">radius</code><em class="property"> = 10</em><a class="headerlink" href="#ball_module.BallClass.radius" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="id6">
+<code class="sig-name descname">update_speed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">speed_multi</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates ball’ s speed using provided multiplier</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>speed_multi</strong> (<em>int</em>) – speed modifier in %</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/ball_module.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Karol Wnęk.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

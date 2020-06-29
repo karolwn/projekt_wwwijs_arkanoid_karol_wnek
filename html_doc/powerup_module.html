@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>powerup_module module &#8212; Arkanoid  documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-powerup_module">
+<span id="powerup-module-module"></span><h1>powerup_module module<a class="headerlink" href="#module-powerup_module" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="powerup_module.PowerupClass">
+<em class="property">class </em><code class="sig-prename descclassname">powerup_module.</code><code class="sig-name descname">PowerupClass</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">type_code</span></em>, <em class="sig-param"><span class="n">respawn_point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#powerup_module.PowerupClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This is a powerup class used to represent single powerup</p>
+<p>…</p>
+<dl class="simple">
+<dt>type_code<span class="classifier">int</span></dt><dd><p>it describes what type of power up is this object</p>
+</dd>
+<dt>duration<span class="classifier">int</span></dt><dd><p>how long does the effect last</p>
+</dd>
+<dt>vel<span class="classifier">int</span></dt><dd><p>how fast does it fall down</p>
+</dd>
+<dt>colors<span class="classifier">[(int, int, int)]</span></dt><dd><p>list that contains tuples containing RGB value</p>
+</dd>
+<dt>x<span class="classifier">int</span></dt><dd><p>x coordinate</p>
+</dd>
+<dt>y<span class="classifier">int</span></dt><dd><p>y coordinate</p>
+</dd>
+<dt>in_move<span class="classifier">boolean</span></dt><dd><p>describes powerup’s ability to move</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="powerup_module.PowerupClass.draw">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">surface</span></em><span class="sig-paren">)</span><a class="headerlink" href="#powerup_module.PowerupClass.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>draws powerup on a given surface</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="powerup_module.PowerupClass.is_caught">
+<code class="sig-name descname">is_caught</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">player</span></em><span class="sig-paren">)</span><a class="headerlink" href="#powerup_module.PowerupClass.is_caught" title="Permalink to this definition">¶</a></dt>
+<dd><p>decides whether player has caugth it</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="powerup_module.PowerupClass.move">
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">dt</span></em>, <em class="sig-param"><span class="n">keys</span></em><span class="sig-paren">)</span><a class="headerlink" href="#powerup_module.PowerupClass.move" title="Permalink to this definition">¶</a></dt>
+<dd><p>defines powerup’s movement</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="powerup_module.PowerupClass.colors">
+<code class="sig-name descname">colors</code><em class="property"> = [(89, 84, 214), (0, 187, 173), (0, 173, 108), (189, 189, 189), (0, 140, 249), (235, 172, 35), (209, 99, 230), (0, 198, 248), (0, 110, 0), (184, 0, 88), (255, 146, 135), (178, 69, 2)]</em><a class="headerlink" href="#powerup_module.PowerupClass.colors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="id0">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">surface</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws powerup on a given surface.</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>surface</strong> (<em>pygame.surface</em>) – canvas to draw on</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="powerup_module.PowerupClass.in_move">
+<code class="sig-name descname">in_move</code><em class="property"> = True</em><a class="headerlink" href="#powerup_module.PowerupClass.in_move" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="id1">
+<code class="sig-name descname">is_caught</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decides whether player has caugth it.</p>
+<p>…</p>
+<dl class="simple">
+<dt>player<span class="classifier">(int, int, int, int)</span></dt><dd><p>informations about player’s hitbox</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>True if caught else False</strong></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id2">
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dt</span></em>, <em class="sig-param"><span class="n">keys</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines powerup’s movement.</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dt</strong> (<em>int</em>) – time in ms that took to process previous frame</p></li>
+<li><p><strong>keys</strong> (<em>pygame.keys.get_pressed()</em>) – keys on the keyboard that were pressed by the player</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="powerup_module.PowerupClass.vel">
+<code class="sig-name descname">vel</code><em class="property"> = 400</em><a class="headerlink" href="#powerup_module.PowerupClass.vel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/powerup_module.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Karol Wnęk.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

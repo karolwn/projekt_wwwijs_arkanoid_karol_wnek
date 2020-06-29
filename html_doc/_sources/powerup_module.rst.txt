@@ -1,0 +1,7 @@
+powerup\_module module
+======================
+
+.. automodule:: powerup_module
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+load\_module module
+===================
+
+.. automodule:: load_module
+   :members:
+   :undoc-members:
+   :show-inheritance:

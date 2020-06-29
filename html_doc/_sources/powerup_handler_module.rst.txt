@@ -1,0 +1,7 @@
+powerup\_handler\_module module
+===============================
+
+.. automodule:: powerup_handler_module
+   :members:
+   :undoc-members:
+   :show-inheritance:

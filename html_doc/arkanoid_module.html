@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>arkanoid_module module &#8212; Arkanoid  documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-arkanoid_module">
+<span id="arkanoid-module-module"></span><h1>arkanoid_module module<a class="headerlink" href="#module-arkanoid_module" title="Permalink to this headline">¶</a></h1>
+<p>This is a simple Arkanoid clone</p>
+<p>arkanoid.py is the main script that keeps everything running (game)
+required modules:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>pygame, developed on version 1.9.6</p></li>
+<li><p>ball_module.py</p></li>
+<li><p>block_module.py</p></li>
+<li><p>player_module.py</p></li>
+<li><p>powerup_module.py</p></li>
+<li><p>powerup_handler_module.py</p></li>
+</ul>
+</div></blockquote>
+<p>For more complete game with menus and level editor launch main_menu_module.py</p>
+<p>Created as a project for the WWW and Script Languages classes at AGH University of Science and Technology
+Karol Wnęk ICT studies, second year, may 2020</p>
+<dl class="py function">
+<dt id="arkanoid_module.arkanoid_main">
+<code class="sig-prename descclassname">arkanoid_module.</code><code class="sig-name descname">arkanoid_main</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">surface</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">game_size</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">level</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#arkanoid_module.arkanoid_main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main function that keeps everything running</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>surface</strong> (<em>pygame.display.set_mode(), None by default</em>) – existing screen</p></li>
+<li><p><strong>game_size</strong> (<em>(width, height), None by default</em>) – game size</p></li>
+<li><p><strong>level</strong> (<em>[BlockClass], None by default</em>) – loaded level</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="arkanoid_module.generate_level">
+<code class="sig-prename descclassname">arkanoid_module.</code><code class="sig-name descname">generate_level</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rows</span></em>, <em class="sig-param"><span class="n">collums</span></em>, <em class="sig-param"><span class="n">colors</span></em><span class="sig-paren">)</span><a class="headerlink" href="#arkanoid_module.generate_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate level by making a list containing blocks</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rows</strong> (<em>int</em>) – how many rows of blocks should be generated</p></li>
+<li><p><strong>collumns</strong> (<em>int</em>) – how many collumns of blocks should be generated</p></li>
+<li><p><strong>colors</strong> (<em>[(int, int, int)]</em>) – list containing tuples that contain RGB values</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>generated level</strong> – list containg created blocks</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[<a class="reference internal" href="block_module.html#block_module.BlockClass" title="block_module.BlockClass">BlockClass</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="arkanoid_module.hit_reg">
+<code class="sig-prename descclassname">arkanoid_module.</code><code class="sig-name descname">hit_reg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em>, <em class="sig-param"><span class="n">ball</span></em>, <em class="sig-param"><span class="n">blocks</span></em>, <em class="sig-param"><span class="n">surface</span></em>, <em class="sig-param"><span class="n">colors</span></em>, <em class="sig-param"><span class="n">points_for_hit</span></em>, <em class="sig-param"><span class="n">hitmarker</span></em>, <em class="sig-param"><span class="n">bounce</span></em>, <em class="sig-param"><span class="n">size</span></em>, <em class="sig-param"><span class="n">dt</span></em>, <em class="sig-param"><span class="n">powerups</span></em><span class="sig-paren">)</span><a class="headerlink" href="#arkanoid_module.hit_reg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handles hit registration</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>player</strong> (<em>PlayerClass</em>) – player</p></li>
+<li><p><strong>ball</strong> (<em>BallClass</em>) – ball</p></li>
+<li><p><strong>surface</strong> (<em>pygame.surface</em>) – canvas to draw on</p></li>
+<li><p><strong>colors</strong> (<em>[(int, int, int)]</em>) – list containing tuples that contain RGB values</p></li>
+<li><p><strong>poins_for_hit</strong> (<em>int</em>) – how many points the player should be awarded with for hitting a block</p></li>
+<li><p><strong>hitmarker</strong> (<em>pygame.mixer.Sound</em>) – sound to play after hitting block</p></li>
+<li><p><strong>bounce</strong> (<em>pygame.mixer.Sound</em>) – sound to play after hitting player</p></li>
+<li><p><strong>size</strong> (<em>(int, int)</em>) – window size (width, height)</p></li>
+<li><p><strong>dt</strong> (<em>int</em>) – how long it took to render previous frame</p></li>
+<li><p><strong>powerups</strong> (<em>[PowerupClass]</em>) – list containing all visible powerups</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="arkanoid_module.quick_load">
+<code class="sig-prename descclassname">arkanoid_module.</code><code class="sig-name descname">quick_load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#arkanoid_module.quick_load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables user to perform quickload</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>loaded_data</strong></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>[<a class="reference internal" href="player_module.html#player_module.PlayerClass" title="player_module.PlayerClass">PlayerClass</a>, [<a class="reference internal" href="ball_module.html#ball_module.BallClass" title="ball_module.BallClass">BallClass</a>], [<a class="reference internal" href="block_module.html#block_module.BlockClass" title="block_module.BlockClass">BlockClass</a>], [<a class="reference internal" href="powerup_module.html#powerup_module.PowerupClass" title="powerup_module.PowerupClass">PowerupClass</a>], [(int, int, int)]] OR empty list in case of exception</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="arkanoid_module.quick_save">
+<code class="sig-prename descclassname">arkanoid_module.</code><code class="sig-name descname">quick_save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em>, <em class="sig-param"><span class="n">balls</span></em>, <em class="sig-param"><span class="n">blocks</span></em>, <em class="sig-param"><span class="n">powerups</span></em>, <em class="sig-param"><span class="n">colors</span></em><span class="sig-paren">)</span><a class="headerlink" href="#arkanoid_module.quick_save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables user to perform quicksave</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>player</strong> (<em>PlayerClass</em>) – player</p></li>
+<li><p><strong>balls</strong> (<em>[BallClass]</em>) – list containing balls</p></li>
+<li><p><strong>blocks</strong> (<em>[BlockClass]</em>) – list containing blocks</p></li>
+<li><p><strong>powerups</strong> (<em>[PowerupClass]</em>) – list containing powerups</p></li>
+<li><p><strong>colors</strong> (<em>[(int, int, int)]</em>) – list containing tuples that contain RGB values</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="arkanoid_module.redraw_window">
+<code class="sig-prename descclassname">arkanoid_module.</code><code class="sig-name descname">redraw_window</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">surface</span></em>, <em class="sig-param"><span class="n">blocks</span></em>, <em class="sig-param"><span class="n">player</span></em>, <em class="sig-param"><span class="n">balls</span></em>, <em class="sig-param"><span class="n">font</span></em>, <em class="sig-param"><span class="n">size</span></em>, <em class="sig-param"><span class="n">powerups</span></em>, <em class="sig-param"><span class="n">save</span></em>, <em class="sig-param"><span class="n">load</span></em><span class="sig-paren">)</span><a class="headerlink" href="#arkanoid_module.redraw_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Core function, it is resposnible for drawing the whole game screen</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>surface</strong> (<em>pygame.surface</em>) – canvas to draw on</p></li>
+<li><p><strong>blocks</strong> (<em>[BlockClass]</em>) – list containing remaining blocks</p></li>
+<li><p><strong>player</strong> (<em>PlayerClass</em>) – player</p></li>
+<li><p><strong>balls</strong> (<em>[BallClass]</em>) – list containing remaining balls</p></li>
+<li><p><strong>font</strong> (<em>pygame.font</em>) – font used to display score and lives</p></li>
+<li><p><strong>size</strong> (<em>(int, int)</em>) – game window size (widht, height)</p></li>
+<li><p><strong>powerups</strong> (<em>[PowerupClass]</em>) – list that contains all powerups that should be drawn</p></li>
+<li><p><strong>save</strong> (<em>boolean</em>) – flag used to determine whether “saved” message should be displayed</p></li>
+<li><p><strong>load</strong> (<em>boolean</em>) – flag used to determine whether quickload error has occoured and error message should be displayed</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="arkanoid_module.reset_balls">
+<code class="sig-prename descclassname">arkanoid_module.</code><code class="sig-name descname">reset_balls</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em>, <em class="sig-param"><span class="n">balls</span></em>, <em class="sig-param"><span class="n">size_y</span></em>, <em class="sig-param"><span class="n">ball_speed</span></em>, <em class="sig-param"><span class="n">ball_power</span></em><span class="sig-paren">)</span><a class="headerlink" href="#arkanoid_module.reset_balls" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets list that contains balls to its default state - only one ball, not moving, located in the middle of the player</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>player</strong> (<em>PlayerClass</em>) – player</p></li>
+<li><p><strong>balls</strong> (<em>[BallClass]</em>) – list that needs to be reseted</p></li>
+<li><p><strong>size_y</strong> (<em>int</em>) – window height</p></li>
+<li><p><strong>ball_speed</strong> (<em>int</em>) – default ball speed</p></li>
+<li><p><strong>ball_power</strong> (<em>int</em>) – default ball damage</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>balls</strong> – reseted balls</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>[<a class="reference internal" href="ball_module.html#ball_module.BallClass" title="ball_module.BallClass">BallClass</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/arkanoid_module.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Karol Wnęk.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

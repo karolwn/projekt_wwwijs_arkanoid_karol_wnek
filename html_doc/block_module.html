@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>block_module module &#8212; Arkanoid  documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-block_module">
+<span id="block-module-module"></span><h1>block_module module<a class="headerlink" href="#module-block_module" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="block_module.BlockClass">
+<em class="property">class </em><code class="sig-prename descclassname">block_module.</code><code class="sig-name descname">BlockClass</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">respan_row</span></em>, <em class="sig-param"><span class="n">respawn_collumn</span></em>, <em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">color</span></em><span class="sig-paren">)</span><a class="headerlink" href="#block_module.BlockClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class to represent single block</p>
+<p>…</p>
+<dl class="simple">
+<dt>row<span class="classifier">int</span></dt><dd><p>row in which upper left corner of block is located</p>
+</dd>
+<dt>collumn<span class="classifier">int</span></dt><dd><p>collumn in which upper left corner of block is located</p>
+</dd>
+<dt>value<span class="classifier">int</span></dt><dd><p>after how many hits this block should disappear</p>
+</dd>
+<dt>point_prize<span class="classifier">int</span></dt><dd><p>how many points for destroying block</p>
+</dd>
+<dt>color<span class="classifier">(int, int, int)</span></dt><dd><p>RGB value representing block’s color</p>
+</dd>
+<dt>hitbox<span class="classifier">(int, int, int, int)</span></dt><dd><p>tuple holding informatiion about hitbox (x, y, width, height)</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="block_module.BlockClass.draw">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">surface</span></em><span class="sig-paren">)</span><a class="headerlink" href="#block_module.BlockClass.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws block on a given surface.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id0">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">surface</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws block on a given surface.</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>surface</strong> (<em>pygame.surface</em>) – canvas to draw on</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/block_module.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Karol Wnęk.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+help\_module module
+===================
+
+.. automodule:: help_module
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>player_module module &#8212; Arkanoid  documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-player_module">
+<span id="player-module-module"></span><h1>player_module module<a class="headerlink" href="#module-player_module" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="player_module.PlayerClass">
+<em class="property">class </em><code class="sig-prename descclassname">player_module.</code><code class="sig-name descname">PlayerClass</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player_size</span></em>, <em class="sig-param"><span class="n">game_size</span></em><span class="sig-paren">)</span><a class="headerlink" href="#player_module.PlayerClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class defining player</p>
+<p>…</p>
+<dl class="simple">
+<dt>lives<span class="classifier">int</span></dt><dd><p>how many lives are left</p>
+</dd>
+<dt>points<span class="classifier">int</span></dt><dd><p>player’s score</p>
+</dd>
+<dt>size<span class="classifier">int</span></dt><dd><p>how big is the player</p>
+</dd>
+<dt>color<span class="classifier">(int, int, int)</span></dt><dd><p>RGB value describing color</p>
+</dd>
+<dt>position<span class="classifier">int</span></dt><dd><p>where does player start, x coordinate of the upper left corner</p>
+</dd>
+<dt>position_bottom<span class="classifier">int</span></dt><dd><p>where does player start, y coordinate of the upper left corner</p>
+</dd>
+<dt>hitbox<span class="classifier">(int, int, int, int)</span></dt><dd><p>tuple containig informations about player’s hitbox (x, y, width, height)</p>
+</dd>
+<dt>move_limitter<span class="classifier">int</span></dt><dd><p>limits speed of player’s movement</p>
+</dd>
+<dt>speed_mod<span class="classifier">float</span></dt><dd><p>modyfies player speed</p>
+</dd>
+<dt>in_move<span class="classifier">boolean</span></dt><dd><p>describes player’s ability to move</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="player_module.PlayerClass.move">
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">moveLimitter</span></em>, <em class="sig-param"><span class="n">keys</span></em>, <em class="sig-param"><span class="n">game_size_x</span></em><span class="sig-paren">)</span><a class="headerlink" href="#player_module.PlayerClass.move" title="Permalink to this definition">¶</a></dt>
+<dd><p>responds to pressed buttons (left arrow, right arrow)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="player_module.PlayerClass.draw">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">surface</span></em><span class="sig-paren">)</span><a class="headerlink" href="#player_module.PlayerClass.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>draws player on a given surface</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="player_module.PlayerClass.get_hitbox">
+<code class="sig-name descname">get_hitbox</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#player_module.PlayerClass.get_hitbox" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns player’s current hitbox</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="player_module.PlayerClass.color">
+<code class="sig-name descname">color</code><em class="property"> = (255, 255, 255)</em><a class="headerlink" href="#player_module.PlayerClass.color" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="id0">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">surface</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws player on a given surface.s</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>surface</strong> (<em>pygame.surface</em>) – canvas to draw on</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id1">
+<code class="sig-name descname">get_hitbox</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns player’s current hitbox</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>player’s hitbox</strong> – (x coordinate of the upper left corner, y coordinate of the upper left corner, width, height)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>(int, int, int, int)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="player_module.PlayerClass.in_move">
+<code class="sig-name descname">in_move</code><em class="property"> = True</em><a class="headerlink" href="#player_module.PlayerClass.in_move" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="player_module.PlayerClass.invert">
+<code class="sig-name descname">invert</code><em class="property"> = 1</em><a class="headerlink" href="#player_module.PlayerClass.invert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="player_module.PlayerClass.lives">
+<code class="sig-name descname">lives</code><em class="property"> = 3</em><a class="headerlink" href="#player_module.PlayerClass.lives" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="id2">
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">move_limitter</span></em>, <em class="sig-param"><span class="n">keys</span></em>, <em class="sig-param"><span class="n">game_size_x</span></em>, <em class="sig-param"><span class="n">dt</span></em><span class="sig-paren">)</span><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Responds to pressed buttons (left arrow, right arrow) and moves player in desired direction.</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>move_limitter</strong> (<em>int</em>) – limits speed of the movement in such way that player can move in every two frames instead of every frame</p></li>
+<li><p><strong>keys</strong> (<em>pygame.key</em>) – presed keys</p></li>
+<li><p><strong>game_size_x</strong> (<em>int</em>) – width of game window, used to determinate where the player should stop</p></li>
+<li><p><strong>dt</strong> (<em>int</em>) – how long it took to render preavious frame</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="player_module.PlayerClass.move_limitter">
+<code class="sig-name descname">move_limitter</code><em class="property"> = 1</em><a class="headerlink" href="#player_module.PlayerClass.move_limitter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="player_module.PlayerClass.points">
+<code class="sig-name descname">points</code><em class="property"> = 0</em><a class="headerlink" href="#player_module.PlayerClass.points" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="player_module.PlayerClass.speed_mod">
+<code class="sig-name descname">speed_mod</code><em class="property"> = 1.0</em><a class="headerlink" href="#player_module.PlayerClass.speed_mod" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/player_module.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Karol Wnęk.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

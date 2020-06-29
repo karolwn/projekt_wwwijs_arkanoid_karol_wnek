@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>main_menu_module module &#8212; Arkanoid  documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-main_menu_module">
+<span id="main-menu-module-module"></span><h1>main_menu_module module<a class="headerlink" href="#module-main_menu_module" title="Permalink to this headline">¶</a></h1>
+<p>This is a simple Arkanoid clone</p>
+<p>main_menu_module.py is the one script to rule them all. It can launch game, level editor or help
+required modules:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>pygame, developed on version 1.9.6</p></li>
+<li><dl class="simple">
+<dt>arkanoid_module.py</dt><dd><p>~ ball_module.py
+~ block_module.py
+~ player_module.py
+~ powerup_module.py
+~ powerup_handler_module.py</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>edit.py</dt><dd><p>~ block_module.py
+~ load_module.py
+~ save_module.py
+~ edit_handler_module.py</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>load.py</dt><dd><p>~ block_module.py
+~ arkanoid_module.py
+~ edit_module.py</p>
+</dd>
+</dl>
+</li>
+<li><p>help_module.py</p></li>
+</ul>
+</div></blockquote>
+<p>For more simple game (without level editor, menus and help) launch arkanoid.py</p>
+<p>Created as a project for the WWW and Script Languages classes at AGH University of Science and Technology
+Karol Wnęk ICT studies, second year, may 2020</p>
+<dl class="py function">
+<dt id="main_menu_module.main">
+<code class="sig-prename descclassname">main_menu_module.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main_menu_module.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main function that keeps everything running</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="main_menu_module.redraw_window">
+<code class="sig-prename descclassname">main_menu_module.</code><code class="sig-name descname">redraw_window</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">surface</span></em>, <em class="sig-param"><span class="n">font</span></em>, <em class="sig-param"><span class="n">size</span></em>, <em class="sig-param"><span class="n">colors</span></em>, <em class="sig-param"><span class="n">UI</span></em>, <em class="sig-param"><span class="n">texts</span></em><span class="sig-paren">)</span><a class="headerlink" href="#main_menu_module.redraw_window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Core function, it is resposnible for drawing the whole game screen</p>
+<p>…</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>surface</strong> (<em>pygame.surface</em>) – canvas to draw on</p></li>
+<li><p><strong>font</strong> (<em>pygame.font</em>) – font used to display score and lives</p></li>
+<li><p><strong>size</strong> (<em>(int, int)</em>) – game window size (widht, height)</p></li>
+<li><p><strong>colors</strong> (<em>[(int, int, int)]</em>) – list containing tuples that contain RGB values</p></li>
+<li><p><strong>UI</strong> (<em>[pygame.Rect]</em>) – list containing UI elements</p></li>
+<li><p><strong>texts</strong> (<em>[pygame.font.render]</em>) – list containing rendered texts</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/main_menu_module.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Arkanoid  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Karol Wnęk.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+edit\_handler\_module module
+============================
+
+.. automodule:: edit_handler_module
+   :members:
+   :undoc-members:
+   :show-inheritance:

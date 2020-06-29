@@ -1,0 +1,7 @@
+edit\_module module
+===================
+
+.. automodule:: edit_module
+   :members:
+   :undoc-members:
+   :show-inheritance:

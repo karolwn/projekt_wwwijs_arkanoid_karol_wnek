@@ -1,0 +1,18 @@
+arkanoid
+========
+
+.. toctree::
+   :maxdepth: 4
+
+   arkanoid_module
+   ball_module
+   block_module
+   edit_handler_module
+   edit_module
+   help_module
+   load_module
+   main_menu_module
+   player_module
+   powerup_handler_module
+   powerup_module
+   save_module
